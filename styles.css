@@ -1,0 +1,183 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+
+
+/* Add to the existing CSS */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensure elements within nav are properly positioned */
+}
+
+nav .social-icons {
+    display: flex;
+    gap: 1em;
+    position: absolute;
+    right: 2em;
+}
+
+nav .social-icons .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+
+nav .social-icons .social-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+
+nav .logo img {
+    height: 80px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    margin-right: 120px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+header.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 70vh; /* Full screen height */
+    box-sizing: border-box;
+}
+
+.content {
+    max-width: 40%;
+    padding-left: 150px;
+}
+
+.image-container {
+    max-width: 80%;
+    height: 80%; /* Adjust to fill most of the screen */
+    overflow: hidden;
+    padding-right: 80px;
+}
+
+.image-container img {
+    width: 500px;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.slider-container {
+    padding: 2em;
+    text-align: center;
+    background: #ffffff;
+}
+
+.slider-container label {
+    font-weight: 600;
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.slider-container input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 12px;
+    background: #C8FAC9; /* New background color */
+    outline: none;
+    opacity: 0.9;
+    border-radius: 6px;
+    transition: opacity 0.2s;
+}
+
+.slider-container input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    background: #6a1b9a; /* New thumb color */
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.slider-container input[type="range"]::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    background: #6a1b9a; /* New thumb color */
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.slider-container .age-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    margin-top: 1em;
+
+}
+
+
+h1, p, ul, div {
+    color: #333;
+}
+
+h1 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 2.5em;
+    line-height: 1em;
+    color: #6a1b9a; /* New heading color */
+}
+
+p {
+    font-size: 1.4em;
+}
+
+ul {
+    padding-left: 20px;
+    
+}
+
+ul li {
+    list-style: disc;
+    font-size: 1.4em;
+    margin: 0.5em 0;
+    color: grey;
+
+}
+
+#price {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #6a1b9a; /* New price color */
+    padding-top: 40px;
+}
