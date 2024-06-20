@@ -181,3 +181,89 @@ ul li {
     color: #6a1b9a; /* New price color */
     padding-top: 40px;
 }
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    nav ul {
+        margin-right: 0;
+    }
+
+    nav .social-icons {
+        position: static;
+        margin-top: 1em;
+    }
+
+    header.hero {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 2em 1em;
+    }
+
+    .content {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .image-container {
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p, ul li {
+        font-size: 1.2em;
+    }
+
+    #price {
+        font-size: 1.3em;
+    }
+
+    .slider-container label {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 0.5em;
+    }
+
+    header.hero {
+        padding: 1em 0.5em;
+    }
+
+    .slider-container {
+        padding: 1em;
+    }
+
+    .slider-container input[type="range"] {
+        height: 10px;
+    }
+
+    .slider-container input[type="range"]::-webkit-slider-thumb, .slider-container input[type="range"]::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+    }
+
+    .slider-container .age-labels {
+        font-size: 0.8em;
+    }
+}
